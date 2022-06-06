@@ -5,7 +5,7 @@ public class ArrayTest3 {
 	public static void main(String[] args) {
 
 		char[] alphabets = new char[26];
-		char ch = 'A'; //65
+		char ch = 'A'; //65, ASKI 코드 값.
 		
 		for(int i = 0; i < alphabets.length; i++, ch++) {
 			alphabets[i] = ch;
