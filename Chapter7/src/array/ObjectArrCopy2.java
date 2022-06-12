@@ -15,12 +15,13 @@ public class ObjectArrCopy2 {
 		bookArray4[0] = new Book();
 		bookArray4[1] = new Book();
 		bookArray4[2] = new Book();
+		//인스턴스만 생성.
 		
 		for(int i = 0; i < bookArray3.length; i++) {
 			bookArray4[i].setBookName(bookArray3[i].getBookName());
 			bookArray4[i].setAuthor(bookArray3[i].getAuthor());
 		}
-		
+		//bookArray4의 요소를 직접 복사.
 		
 		bookArray3[0].setAuthor("Blizzard");
 		bookArray3[0].setBookName("Diablo");
@@ -35,6 +36,20 @@ public class ObjectArrCopy2 {
 		for(int i = 0; i < bookArray4.length; i++) {
 			bookArray4[i].showBookInfo();
 		}
+		
+		String[] strArr = {"Java", "Kotlin", "Python"};
+		
+		for(int i = 0; i < strArr.length; i++) {
+			System.out.println(strArr[i]);
+		}
+		
+		//Enhanced for loop : 각 배열의 요소를 for문 변수로 쓰는 방법.
+		// : 는 조건식에서 = 같은 역할(대입)
+		for(String s : strArr) {
+			System.out.println(s);
+		}
+		
+		
 	}
 
 }
